@@ -1,0 +1,133 @@
+* {
+    margin: 2px;
+    font-family: 'Cinzel', serif;
+   /* background-image: linear-gradient(to right, #edc531, #c9a227, #76520e);*/
+} 
+
+h1 {
+   font-family: 'Cinzel', serif;
+   justify-content: center;
+   text-align: center;
+}
+hr {
+  border-radius: 30px;
+  border: 0.1px solid; 
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+    justify-content: center;
+    display: flex;
+    padding-right: middle;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+#firstinfo {
+   text-align:center;
+   padding-bottom: 20px;
+   margin-left: 10px;
+}
+
+#moreinfo{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#checkboxone{
+     margin-top:10px;
+    color:black;
+    border: 2x solid;
+    padding: 2px 2em;
+    font-size: 12.5px;
+    transition: all 0,25s;
+}
+
+#checkboxone:hover{
+    border-color: #ffea00;
+    color: black;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform:translateY(-0.25em);
+    cursor:pointer;
+}
+
+#btn {
+margin-top:10px;
+color:black;
+border: 2x solid;
+padding: 2px 2em;
+font-size: 12.5px;
+transition: all 0,25s;
+}
+
+#btn:hover {
+    border-color: #ffea00;
+    color: #ffea00;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform:translateY(-0.25em);
+    cursor:pointer;
+}
+.info{
+    padding-top: 30px;
+    align-items: left;
+}
+
+#boxname {
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 2x solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#thbox {
+    background-color: none;
+    text-align: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding: 1em 2em;
+    text-align: center;
+    display: table-column;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 2x solid;
+}
+
+th {
+   display: column;
+   padding: 0.1em 5em;
+}
+
+#initiative, #speed, #proficiency, #inspiration {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding: 1em 1em;
+    border-radius: 4px;
+    display: flexbox;
+}
+p {
+
+}
+
+.saving-throws {
+    padding: 10px;
+    background-color: none;
+    text-align: left;
+    display: flexbox;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 150%;
+    font-display: center;
+    
+
+}
+
+.checkbox-round {
+    background-color: aqua;
+}
