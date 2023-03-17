@@ -1,17 +1,26 @@
-const express = require('express');
+
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const router = require('express').Router();
 const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
-const app = express();
 
-// Use bodyParser to parse form data
-app.use(bodyParser.urlencoded({ extended: true }));
 
+
+router.get("/", (req, res) => {
+  res.render("main");
+});
+
+router.get("/create", (req, res) => {
+  res.render("creation");
+});
+
+router.get("/saved", (req, res) => {
+  res.render("saved");
+});
 // Define an endpoint to handle form submissions
-app.post('/submit-form', (req, res) => {
+router.post('/submit-form', (req, res) => {
   // Get the form data from the request body
   const formData = req.body;
 
@@ -26,9 +35,7 @@ app.post('/submit-form', (req, res) => {
   });
 });
 //router.get('/login', (req, res) => {if(req.session.logged_in) {res.redirect('/');return;}res.render('login');})
-// Start the server
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
-});
+
+
 module.exports = router;
 // routes that take the user betweent he diffrent pages/stages of character creation 
