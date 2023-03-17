@@ -1,0 +1,27 @@
+[ 
+    {
+        "username": "warrior99",
+        "email": "d&d99@gmail.com",
+        "password": "password1234",
+        "name": "Conner",
+        "race": "human",
+        "classType": "warrior",
+        "level": 1,
+        "hitPoints": 13,
+        "armorClass": 16,
+        "speed": 30,
+        "proficiencyBonus": "idk",
+        "passiveWisdom": "idk",
+        "skills": "Athletics, Perception, Survival",
+        "abilities": "None",
+        "savingThrows": "Con",
+        "equipment": "Longsword",
+        "spells": "None"
+    },
+    {
+        "username": "noobplayer123",
+        "email": "mike456@yahoo.com",
+        "password": "password1234"
+        
+    }
+]

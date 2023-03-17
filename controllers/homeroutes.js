@@ -1,6 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const router = require('express').Router();
+const { User } = require('../models');
+const withAuth = require('../utils/auth');
 
 const app = express();
 
@@ -22,10 +25,10 @@ app.post('/submit-form', (req, res) => {
     }
   });
 });
-
+//router.get('/login', (req, res) => {if(req.session.logged_in) {res.redirect('/');return;}res.render('login');})
 // Start the server
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
 });
-
+module.exports = router;
 // routes that take the user betweent he diffrent pages/stages of character creation 
