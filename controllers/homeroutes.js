@@ -12,7 +12,7 @@ app.post('/submit-form', (req, res) => {
   // Get the form data from the request body
   const formData = req.body;
 
-  // Write the form data to a JSON file
+  // Write the form data to a JSON file-save to database instead 
   fs.writeFile('form-data.json', JSON.stringify(formData), (err) => {
     if (err) {
       console.error(err);
@@ -27,3 +27,5 @@ app.post('/submit-form', (req, res) => {
 app.listen(3000, () => {
   console.log('Server listening on port 3000');
 });
+
+// routes that take the user betweent he diffrent pages/stages of character creation 
