@@ -1,36 +1,49 @@
- class User {
-    email;
-    password;
-    username;
+ const { Model, DataTypes} = require('sequelize');
+ const bcrypt = require ('bcrypt');
+ const sequelize = require('../config/connection');
 
-    User( email,  password,  username) {
-        this.email = email;
-        this.password = password;
-        this.username = username;
+ class User extends Model {
+    checkpassword(loginPw) {
+        return bcrypt.compareSync(loginPw, this.password);
     }
-
-    // Getters and setters
-     getEmail() {
-        return email;
+ }
+ User.init(
+    {
+      id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+        validate: {
+          isEmail: true,
+        },
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [6],
+        },
+      },
+    },
+    {
+      sequelize,
+      timestamps: false,
+      freezeTableName: true,
+      underscored: true,
+      modelName: 'user',
     }
-
-     setEmail( email) {
-        this.email = email;
-    }
-
-     getPassword() {
-        return password;
-    }
-
-     setPassword( password) {
-        this.password = password;
-    }
-
-     getUsername() {
-        return username;
-    }
-
-     setUsername( username) {
-        this.username = username;
-    }
-}
+  );
+  
+  module.exports = User;
+  
+ 
