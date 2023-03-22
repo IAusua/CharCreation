@@ -1,20 +1,23 @@
 * {
     margin: 2px;
     font-family: 'Cinzel', serif;
-   /* background-image: linear-gradient(to right, #edc531, #c9a227, #76520e);*/
+    background-image: linear-gradient(to right, #757bc8, #8187dc, #9fa0ff);
+   /* background-color: #a14ebf;  */
 } 
-
+/* main page */
 h1 {
    font-family: 'Cinzel', serif;
    justify-content: center;
    text-align: center;
 }
+
 hr {
   border-radius: 30px;
   border: 0.1px solid; 
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 h2 {
@@ -27,7 +30,7 @@ h2 {
 }
 
 #firstinfo {
-   text-align:center;
+   text-align: center;
    padding-bottom: 20px;
    margin-left: 10px;
 }
@@ -35,6 +38,7 @@ h2 {
 #moreinfo{
     margin-left: 10px;
     margin-top: 10px;
+    background-color: none;
 }
 
 #checkboxone{
@@ -53,23 +57,27 @@ h2 {
     transform:translateY(-0.25em);
     cursor:pointer;
 }
-
-#btn {
-margin-top:10px;
-color:black;
+/* style button from all 3 pages */
+#btn { 
+  /* margin-top: 80%;  */
+color: black;
+background-color: #7b2cbf;
 border: 2x solid;
 padding: 2px 2em;
 font-size: 12.5px;
 transition: all 0,25s;
+position: relative;
+display: auto;
 }
-
+/* style button from all 3 pages */
 #btn:hover {
-    border-color: #ffea00;
-    color: #ffea00;
+    border-color: #7b2cbf;
+    color: #e500a4;
     box-shadow: 0 0.5em 0.5em -0.4em;
     transform:translateY(-0.25em);
     cursor:pointer;
 }
+/* style the creation page */
 .info{
     padding-top: 30px;
     align-items: left;
@@ -102,18 +110,22 @@ th {
    display: column;
    padding: 0.1em 5em;
 }
-
+/* score div */
 #initiative, #speed, #proficiency, #inspiration {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding: 1em 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding: 0.1em 0.1em;
     border-radius: 4px;
     display: flexbox;
+    background-color: none;
+    width: 120px;
+    height: 70px;
+    padding: 2px;
+    text-align: center;
+    background-color: none;
 }
-p {
 
-}
-
+/* styles the saving-throws box */
 .saving-throws {
     padding: 10px;
     background-color: none;
@@ -124,10 +136,80 @@ p {
     border-radius: 4px;
     font-size: 150%;
     font-display: center;
-    
+}
+
+#boxone {
+    background-color: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    font-size: 150%;
+}
+
+.saving-throwstwo {
+    background-color: none;
+    width: 90px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 150%;
 
 }
 
-.checkbox-round {
-    background-color: aqua;
+#boxtwo {
+    background-color: none;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 100%;
+ 
+}
+
+#boxfive {
+    background-color: none;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 100%;
+    text-align: center;
+}
+
+table {
+    width: 20px;
+    height: 20px;
+}
+
+#boxsix {
+    background-color: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 100%;
+    text-align: center;
+}
+
+#container {
+    margin: auto;
+    width: auto;
+    float: right;
+}
+
+
+#boxseven {
+    background-color: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 100%;
+    text-align: center;
+}
+
+
+#btnfive {
+    background-color: #7b2cbf;
+
+}
+
+::placeholder { 
+    color: black;
+    opacity: 1; 
 }

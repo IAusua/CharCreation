@@ -11,225 +11,37 @@
 </head>
 <body>
     <header>
-        <h1>C&amp;C Character Creation</h1>
+        <h1>C&amp;C</h1>
     </header>
+   
     <hr>
-<div class="info">
-    <table>        
-        <tr>
-            <th>CHARACTER NAME</th>
-            <input id="thbox" type="text" placeholder="CHARACTER NAME">
-            <th>RACE</th>
-            <input id="thbox" type="text" placeholder="RACE">
-            <th>CLASS</th>
-            <input id="thbox" type="text" placeholder="CLASS">
-            <th>BACKGROUND</th>
-            <input id="thbox" type="textarea" placeholder="BACKGROUND">
-        </tr>
-        <tr>
-            <th>ALIGNMENT</th>
-            <th>PLAYER NAME</th>
-        </tr>
-    </table>
-</div>
-<br>
-<div class="score">
-    <input id="initiative" type="number" placeholder="INITIATIVE">
-    <input id="speed" type="number" placeholder="SPEED">
-    <input id="proficiency" type="number" placeholder="PROFICIENCY">
-    <input id="inspiration" type="number" placeholder="INSPIRATION">
-</div>
-<br>
-<div class="scoretwo">
- <p><strong>STRENGTH</strong></p>
+    <h2>Login </h2>
+    <form id="firstinfo">
+        <input type="text" placeholder="username" id="moreinfo">
+        <input type="password" placeholder="password" id="moreinfo">
+        <button id="btn"><strong>Login</strong></button>
+        <br>
+        <label for="remember-me">Remember me</label>
+        <input type="checkbox" id="checkboxone" id="moreinfo">
+        <label for="forgot-password">Forgot password?</label>
+        <input type="checkbox" id="checkboxone" id="moreinfo">
+    </form>
 
- <input class="saving-throws" type="number" placeholder="">
- <input type="checkbox" class="checkbox" placeholder="SAVING THROWS">
- <label for="checkbox"><strong>SAVING THROWS</strong></label>
- <input type="checkbox" class="checkbox-round" placeholder="ATHLETICS">
- <label for="checkbox"><strong>ATHLETICS</strong></label>
- 
- <br> 
- <p><strong>DEXTERITY</strong></p>
- <input class="saving-throws" type="number" placeholder="">
- <input type="checkbox" class="checkbox" placeholder="SAVING THROWS">
- <label for="checkbox"><strong>SAVING THROWS</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="ACROBATICS">
- <label for="checkbox"><strong>ACROBATICS</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="SLEIGHT OF HAND">
- <label for="checkbox"><strong>SLEIGHT OF HAND</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="STEALTH">
- <label for="checkbox"><strong>STEALTH</strong></label>
- <br>
-
- <p><strong>CONSTITUTION</strong></p>
- <input class="saving-throws" type="number" placeholder="">
- <input type="checkbox" class="checkbox" placeholder="SAVING THROWS">
- <label for="checkbox"><strong>CONSTITUTION</strong></label>
-
- <br>
- <p><strong>INTELLIGENCE</strong></p>
- <input class="saving-throws" type="number" placeholder="">
- <input type="checkbox" class="checkbox" placeholder="SAVING THROWS">
- <label for="checkbox"><strong>SAVING THROWS</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="ARCANA">
- <label for="checkbox"><strong>ARCANA</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="HISTORY">
- <label for="checkbox"><strong>HISTORY</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="INVESTIGATION">
- <label for="checkbox"><strong>INVESTIGATION</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="NATURE">
- <label for="checkbox"><strong>NATURE</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="RELIGION">
- <label for="checkbox"><strong>RELIGION</strong></label>
-
-
- <br>
- <p><strong>WISDOM</strong></p>
- <input class="saving-throws" type="number" placeholder="">
- <input type="checkbox" class="checkbox" placeholder="SAVING THROWS">
- <label for="checkbox"><strong>SAVING THROWS</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="ANIMAL HANDLING">
- <label for="checkbox"><strong>ANIMAL HANDLING</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="INSIGHT">
- <label for="checkbox"><strong>INSIGHT</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="MEDICINE">
- <label for="checkbox"><strong>MEDICINE</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="PERCEPTION">
- <label for="checkbox"><strong>PERCEPTION</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="SURVIVAL">
- <label for="checkbox"><strong>SURVIVAL</strong></label>
- <br>
- <p><strong>PASSIVE WISDOM(PERCEPTION)</strong></p>
- <p><strong>CHARISMA</strong></p>
- <input class="saving-throws" type="number" placeholder="">
- <input type="checkbox" class="checkbox" placeholder="SAVING THROWS">
- <label for="checkbox"><strong>SAVING THROWS</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="DECEPTION">
- <label for="checkbox"><strong>DECEPTION</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="INTIMIDATION">
- <label for="checkbox"><strong>INTIMIDATION</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="PERFORMANCE">
- <label for="checkbox"><strong>PERFORMANCE</strong></label>
- <br>
- <input type="checkbox" class="checkbox-round" placeholder="PERSUASION">
- <label for="checkbox"><strong>PERSUASION</strong></label>
- <br>
-
-<div class="boxone">
-    <p><strong>TREASURES</strong></p>
-    <input id="boxone" type="textarea" placeholder="">
-</div>
-<div class="boxtwo">
-    <p><strong>ARMOR CLASS</strong></p>
-    <input id="saving-throws" type="number" placeholder="">
-    <input id="boxtwo" type="textarea" placeholder="">
-</div>
-<br>
-<div class="boxthree">
-    <p><strong>HIT POINTS</strong></p>
-    <input id="saving-throws" type="number" placeholder="">
-    <input id="boxthree" type="textarea" placeholder="">
-    <label for="boxthree"><strong>WOUNDS</strong></label>
-    <br>
-    <p><strong>LEVEL</strong></p>
-    <input id="saving-throws" type="number" placeholder="">
-    <input id="boxthree" type="textarea" placeholder="">
-    <label for="boxthree"><strong>EXPERIENCE NEEDED</strong></label>
-</div>
-<br>
-<div class="boxfour">
-  <table>
-    <input id="boxfour" type="textarea" placeholder="">
-    <tr>
-        <th><strong>AGE</strong></th>
-        <th><strong>SKIN</strong></th>
-    </tr>
-    <tr>
-        <th><strong>HEIGHT</strong></th>
-        <th><strong>HAIR</strong></th>
-    </tr>
-    <tr>
-        <th><strong>WEIGHT</strong></th>
-        <th><strong>EYES</strong></th>
-    </tr>
-    <tr>
-        <th><strong>VISION</strong></th>
-        <th><strong>REPUTATION</strong></th>
-    </tr>
-  </table>
-</div>
-<br>
-<div class="boxfive">
-    <input id="boxfive" type="textarea" placeholder="PERSONALITY TRAITS">
-    <br>
-    <input id="boxfive" type="textarea" placeholder="IDEALS">
-    <br>
-    <input id="boxfive" type="textarea" placeholder="BONDS">
-    <br>
-    <input id="boxfive" type="textarea" placeholder="FLAWS">
-</div>
-<br>
-<div class="boxfive">
-   <table>
-    <input id="boxfive" type="textarea" placeholder="">
-    <tr>
-        <th><strong>NAME</strong></th>
-        <th><strong>ATTACK</strong></th>
-        <th><strong>DAMAGE</strong></th>
-        <th><strong>RANGE</strong></th>
-        <th><strong>AMMO</strong></th>
-        <th><strong>USED</strong></th>
-    </tr>
-   </table>
-   <p><strong>ATTACKS &amp; SPELLCASTING</strong></p>
-</div>
-<br>
-<div class="boxsix">
-    <input id="boxsix" type="textarea" placeholder="">
-    <label for="boxsix"><strong>OTHER PROFICIENCIES &amp; LANGUAGES</strong></label>
-   <br><br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-   <input type="radio" class="checkbox" placeholder="">
-   <br>
-    <label for="boxsix"><strong>SPECIAL ABILITIES</strong></label>
-   <br>
-</div>
-<footer>
-    <input id="boxsix" type="textarea" placeholder="">
-    <label for="boxsix"><strong>EQUIPMENT &amp; CHARACTER NOTES</strong></label>
-    <button id="btn"><strong>SUBMIT</strong></button>
-</footer>
+    <h2>Create New Account</h2>
+    <form id="firstinfo">
+        <label for="first-name"><strong>Name:</strong></label>
+        <input id="moreinfo" type="text" placeholder="first name" >
+        <br>
+        <label for="last-name"><strong>Last Name:</strong></label>
+        <input id="moreinfo" type="text" placeholder="last name">
+        <br>
+        <label for="email"><strong>Email:</strong></label>
+        <input id="moreinfo" type="email" placeholder="email">
+        <br>
+        <label for="password"><strong>Password:</strong></label>
+        <input id="moreinfo" type="password" placeholder="password">
+        <br>
+        <button id="btn"><strong>Sign In</strong></button>
+    </form>
 </body>
 </html>
