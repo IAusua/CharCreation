@@ -1,22 +1,26 @@
 * {
     margin: 2px;
     font-family: 'Cinzel', serif;
-    background-image: linear-gradient(to right, #757bc8, #8187dc, #9fa0ff);
-   /* background-color: #a14ebf;  */
+     /* background-color: linear-gradient(to right, #8e008b, #5c008b, #2e005d);  */
+    color: white; 
+     background-color: #1b0033; 
 } 
+
 /* main page */
 h1 {
    font-family: 'Cinzel', serif;
    justify-content: center;
    text-align: center;
+   color: white;
 }
 
 hr {
   border-radius: 30px;
-  border: 0.1px solid; 
+  border: 0.2px solid; 
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  color: #350066;
  
 }
 
@@ -26,6 +30,7 @@ h2 {
     padding-right: middle;
     padding-top: 50px;
     padding-bottom: 30px;
+    color: white;
 
 }
 
@@ -38,11 +43,11 @@ h2 {
 #moreinfo{
     margin-left: 10px;
     margin-top: 10px;
-    background-color: none;
+    background-color: #8eb5f0;
 }
 
 #checkboxone{
-     margin-top:10px;
+    margin-top:10px;
     color:black;
     border: 2x solid;
     padding: 2px 2em;
@@ -50,29 +55,35 @@ h2 {
     transition: all 0,25s;
 }
 
-#checkboxone:hover{
-    border-color: #ffea00;
-    color: black;
-    box-shadow: 0 0.5em 0.5em -0.4em;
-    transform:translateY(-0.25em);
-    cursor:pointer;
-}
-/* style button from all 3 pages */
-#btn { 
-  /* margin-top: 80%;  */
+/* style button from main and creation */
+#btn-1 { 
 color: black;
-background-color: #7b2cbf;
+background-color: #48bfe3;
 border: 2x solid;
 padding: 2px 2em;
 font-size: 12.5px;
 transition: all 0,25s;
 position: relative;
 display: auto;
+border-radius: 2px;
+}
+
+#btn-2 {
+    color: white;
+    background-color: #48bfe3;
+    border: 2x solid;
+    padding: 1em 4em;
+    font-size: 1em;
+    transition: all 0,25s;
+    position: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
 }
 /* style button from all 3 pages */
-#btn:hover {
-    border-color: #7b2cbf;
-    color: #e500a4;
+#btn-1, #btn-2:hover {
+    border-color: #48bfe3;
+    color: #5aedc9;
     box-shadow: 0 0.5em 0.5em -0.4em;
     transform:translateY(-0.25em);
     cursor:pointer;
@@ -94,7 +105,8 @@ display: auto;
 }
 
 #thbox {
-    background-color: none;
+    background-color: #b8d0eb;
+    color:black;
     text-align: row;
     padding-left: 10%;
     padding-right: 10%;
@@ -106,9 +118,15 @@ display: auto;
     border: 2x solid;
 }
 
+/* p{
+    color:black;
+    font-size: auto;
+} */
+
 th {
    display: column;
    padding: 0.1em 5em;
+   color: white;
 }
 /* score div */
 #initiative, #speed, #proficiency, #inspiration {
@@ -116,19 +134,20 @@ th {
     padding-right: 5%;
     padding: 0.1em 0.1em;
     border-radius: 4px;
-    display: flexbox;
+    /* display: flexbox; */
     background-color: none;
     width: 120px;
     height: 70px;
     padding: 2px;
     text-align: center;
-    background-color: none;
+    background-color: #b8d0eb;
+    color: black;
 }
 
 /* styles the saving-throws box */
 .saving-throws {
     padding: 10px;
-    background-color: none;
+    background-color: #b8d0eb;
     text-align: left;
     display: flexbox;
     width: 60px;
@@ -139,7 +158,7 @@ th {
 }
 
 #boxone {
-    background-color: none;
+    background-color: #b8d0eb;
     width: 200px;
     height: 200px;
     border-radius: 4px;
@@ -147,7 +166,7 @@ th {
 }
 
 .saving-throwstwo {
-    background-color: none;
+    background-color: #b8d0eb;
     width: 90px;
     height: 100px;
     border-radius: 4px;
@@ -156,7 +175,7 @@ th {
 }
 
 #boxtwo {
-    background-color: none;
+    background-color: #b8d0eb;
     width: 300px;
     height: 100px;
     border-radius: 4px;
@@ -164,52 +183,142 @@ th {
  
 }
 
-#boxfive {
-    background-color: none;
-    width: 300px;
-    height: 100px;
-    border-radius: 4px;
-    font-size: 100%;
-    text-align: center;
-}
-
-table {
-    width: 20px;
-    height: 20px;
-}
-
-#boxsix {
-    background-color: none;
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
-    font-size: 100%;
-    text-align: center;
-}
 
 #container {
-    margin: auto;
-    width: auto;
-    float: right;
+    /* margin: auto; */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* float: right; */
 }
 
-
-#boxseven {
+/* footer of creation */
+#boxseven { 
     background-color: none;
     width: 100px;
     height: 100px;
     border-radius: 4px;
     font-size: 100%;
     text-align: center;
-}
-
-
-#btnfive {
-    background-color: #7b2cbf;
-
 }
 
 ::placeholder { 
     color: black;
     opacity: 1; 
+}
+
+
+.row {
+    background-color: black;
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+   
+}
+
+div.col {
+    padding: 1px 2px;
+}
+
+.containerinput {
+    background-color: #b8d0eb;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    padding: 2px 3px;
+    
+}
+
+#newbox {
+    background-color: #b8d0eb;
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 1px 2px;
+}
+
+#boxfive {
+    background-color: #b8d0eb;
+    width: 95%;
+    height: 150px;
+    border-radius: 4px;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1px 2px;
+}
+
+.container-text-center {
+    width: 200%;
+    height: 300%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-text-center-two {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    /* height: 150px; */
+    border-radius: 0px;
+    border: 2px;
+    padding: 4px;
+}
+
+#radio {
+    background-color: #b8d0eb;
+    width: 94%;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 1px -7.5px;
+}
+
+
+#boxseven {
+    background-color: #b8d0eb;
+    width: 70%;
+    height: 150px;
+    border-radius: 4px;
+    font-size: auto;
+    text-align: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#boxseven1 {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* saved page */
+#displaycharacter {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    border-color: #b8d0eb;
+    font-size: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#footer-3 {
+display: flex;
+justify-content: center;
+padding-top: 100%;
 }
