@@ -1,0 +1,324 @@
+* {
+    margin: 2px;
+    font-family: 'Cinzel', serif;
+     /* background-color: linear-gradient(to right, #8e008b, #5c008b, #2e005d);  */
+    color: white; 
+     background-color: #1b0033; 
+} 
+
+/* main page */
+h1 {
+   font-family: 'Cinzel', serif;
+   justify-content: center;
+   text-align: center;
+   color: white;
+}
+
+hr {
+  border-radius: 30px;
+  border: 0.2px solid; 
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #350066;
+ 
+}
+
+h2 {
+    justify-content: center;
+    display: flex;
+    padding-right: middle;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: white;
+
+}
+
+#firstinfo {
+   text-align: center;
+   padding-bottom: 20px;
+   margin-left: 10px;
+}
+
+#moreinfo{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #8eb5f0;
+}
+
+#checkboxone{
+    margin-top:10px;
+    color:black;
+    border: 2x solid;
+    padding: 2px 2em;
+    font-size: 12.5px;
+    transition: all 0,25s;
+}
+
+/* style button from main and creation */
+#btn-1 { 
+color: black;
+background-color: #48bfe3;
+border: 2x solid;
+padding: 2px 2em;
+font-size: 12.5px;
+transition: all 0,25s;
+position: relative;
+display: auto;
+border-radius: 2px;
+}
+
+#btn-2 {
+    color: white;
+    background-color: #48bfe3;
+    border: 2x solid;
+    padding: 1em 4em;
+    font-size: 1em;
+    transition: all 0,25s;
+    position: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+/* style button from all 3 pages */
+#btn-1, #btn-2:hover {
+    border-color: #48bfe3;
+    color: #5aedc9;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform:translateY(-0.25em);
+    cursor:pointer;
+}
+/* style the creation page */
+.info{
+    padding-top: 30px;
+    align-items: left;
+}
+
+#boxname {
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 2x solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#thbox {
+    background-color: #b8d0eb;
+    color:black;
+    text-align: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding: 1em 2em;
+    text-align: center;
+    display: table-column;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 2x solid;
+}
+
+/* p{
+    color:black;
+    font-size: auto;
+} */
+
+th {
+   display: column;
+   padding: 0.1em 5em;
+   color: white;
+}
+/* score div */
+#initiative, #speed, #proficiency, #inspiration {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding: 0.1em 0.1em;
+    border-radius: 4px;
+    /* display: flexbox; */
+    background-color: none;
+    width: 120px;
+    height: 70px;
+    padding: 2px;
+    text-align: center;
+    background-color: #b8d0eb;
+    color: black;
+}
+
+/* styles the saving-throws box */
+.saving-throws {
+    padding: 10px;
+    background-color: #b8d0eb;
+    text-align: left;
+    display: flexbox;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 150%;
+    font-display: center;
+}
+
+#boxone {
+    background-color: #b8d0eb;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    font-size: 150%;
+}
+
+.saving-throwstwo {
+    background-color: #b8d0eb;
+    width: 90px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 150%;
+
+}
+
+#boxtwo {
+    background-color: #b8d0eb;
+    width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 100%;
+ 
+}
+
+
+#container {
+    /* margin: auto; */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* float: right; */
+}
+
+/* footer of creation */
+#boxseven { 
+    background-color: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 100%;
+    text-align: center;
+}
+
+::placeholder { 
+    color: black;
+    opacity: 1; 
+}
+
+
+.row {
+    background-color: black;
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    border-radius: 4px;
+   
+}
+
+div.col {
+    padding: 1px 2px;
+}
+
+.containerinput {
+    background-color: #b8d0eb;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    padding: 2px 3px;
+    
+}
+
+#newbox {
+    background-color: #b8d0eb;
+    width: 100%;
+    height: 100px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 1px 2px;
+}
+
+#boxfive {
+    background-color: #b8d0eb;
+    width: 95%;
+    height: 150px;
+    border-radius: 4px;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1px 2px;
+}
+
+.container-text-center {
+    width: 200%;
+    height: 300%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-text-center-two {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    /* height: 150px; */
+    border-radius: 0px;
+    border: 2px;
+    padding: 4px;
+}
+
+#radio {
+    background-color: #b8d0eb;
+    width: 94%;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 1px -7.5px;
+}
+
+
+#boxseven {
+    background-color: #b8d0eb;
+    width: 70%;
+    height: 150px;
+    border-radius: 4px;
+    font-size: auto;
+    text-align: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#boxseven1 {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* saved page */
+#displaycharacter {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    border-color: #b8d0eb;
+    font-size: auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#footer-3 {
+display: flex;
+justify-content: center;
+padding-top: 100%;
+}

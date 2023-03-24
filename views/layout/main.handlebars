@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <title>C-and-C-Character-Creation</title>
     <!-- LINK STYLE SHEET -->
 </head>
 <body>
     <header>
-        <title>C&amp;C</title>
+        <h1>C&amp;C</h1>
     </header>
-    <h1>C&amp;C</h1>
+   
     <hr>
     <h2>Login </h2>
-    
-    <form>
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <button>Login</button>
+    <form id="firstinfo">
+        <input type="text" placeholder="username" id="moreinfo">
+        <input type="password" placeholder="password" id="moreinfo">
+        <button id="btn"><strong>Login</strong></button>
         <br>
         <label for="remember-me">Remember me</label>
-        <input type="checkbox" id="checkbox">
+        <input type="checkbox" id="checkboxone" id="moreinfo">
         <label for="forgot-password">Forgot password?</label>
-        <input type="checkbox" id="checkbox">
+        <input type="checkbox" id="checkboxone" id="moreinfo">
     </form>
-   
+
     <h2>Create New Account</h2>
-    <form>
-        <label for="first-name">Name</label>
-        <input id="first-name" type="text" placeholder="first name">
+    <form id="firstinfo">
+        <label for="first-name"><strong>Name:</strong></label>
+        <input id="moreinfo" type="text" placeholder="first name" >
         <br>
-        <label for="last-name">Last Name</label>
-        <input id="last-name" type="text" placeholder="last name">
+        <label for="last-name"><strong>Last Name:</strong></label>
+        <input id="moreinfo" type="text" placeholder="last name">
         <br>
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="email">
+        <label for="email"><strong>Email:</strong></label>
+        <input id="moreinfo" type="email" placeholder="email">
         <br>
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="password">
+        <label for="password"><strong>Password:</strong></label>
+        <input id="moreinfo" type="password" placeholder="password">
         <br>
-        <button id="btn2">Sign In</button>
+        <button id="btn"><strong>Sign In</strong></button>
     </form>
 
 <footer>
