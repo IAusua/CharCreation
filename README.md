@@ -8,5 +8,6 @@ AS a user,
 I WANT to create my custom (or randomly generated) character to use
 SO THAT I can come back to the site and retrieve the character at will
 
+Beatriz Rivard, Ismael Ausua, Nathan Lall
 
 Deployed App: TBD
